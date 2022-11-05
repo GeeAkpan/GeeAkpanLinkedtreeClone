@@ -140,13 +140,6 @@ form button {
     gap: 24px;
   }
 
-  /* #label {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        color: var(--Gray-700);
-      } */
-
   .checkbox__container {
     align-items: flex-start;
   }
