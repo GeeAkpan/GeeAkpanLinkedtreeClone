@@ -1,18 +1,17 @@
-import { Footer, LinkSection, ProfileDetails, Socials, ShareButton } from './components';
-import './App.css'
-import './index.css';
-
+import { Routes, Route } from "react-router-dom"
+import './App.css';
+import Home from "./components/pages/Home"
+import Contact from "./components/pages/contact/Contact"
 
 const App = () => {
   return (
-    <div className='App'>
-      <ShareButton />
-      <ProfileDetails />
-      <LinkSection />
-      <Socials />
-      <Footer />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;
